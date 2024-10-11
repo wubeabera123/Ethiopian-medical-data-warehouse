@@ -746,3 +746,552 @@ DBT_TARGET_PATH env var instead.
 [0m12:00:10.443721 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C9518E29C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C951B45160>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C951DEE240>]}
 [0m12:00:10.443721 [debug] [MainThread]: Flushing usage events
 [0m12:00:16.137821 [debug] [MainThread]: Error sending anonymous usage statistics. Disabling tracking for this execution. If you wish to permanently disable tracking, see: https://docs.getdbt.com/reference/global-configs#send-anonymous-usage-stats.
+[0m16:11:08.099783 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002167E4CA1B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000216014B52E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002167F9B6E10>]}
+
+
+============================== 16:11:08.102807 | a8176acd-c89a-4c1d-a9fb-a23154ac12cb ==============================
+[0m16:11:08.102807 [info ] [MainThread]: Running with dbt=1.8.7
+[0m16:11:08.103803 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\wubeshet.abera\\.dbt', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'C:\\Users\\wubeshet.abera\\Projects\\Ten-Academy\\Ethiopian-medical-data-warehouse\\my_project\\logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt run', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m16:11:08.200009 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `target-path` config in `dbt_project.yml` has been deprecated, and will no
+longer be supported in a future version of dbt-core. If you wish to write dbt
+artifacts to a custom directory, please use the --target-path CLI flag or
+DBT_TARGET_PATH env var instead.
+[0m16:11:08.200917 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': 'a8176acd-c89a-4c1d-a9fb-a23154ac12cb', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002160167BE00>]}
+[0m16:11:08.344794 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'a8176acd-c89a-4c1d-a9fb-a23154ac12cb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002160134CEC0>]}
+[0m16:11:08.387857 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'a8176acd-c89a-4c1d-a9fb-a23154ac12cb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002167F6CA7E0>]}
+[0m16:11:08.388870 [info ] [MainThread]: Registered adapter: postgres=1.8.2
+[0m16:11:08.404847 [debug] [MainThread]: checksum: 4af21dafb485259c48497ac86b711ddb1982f3d0f1c0ca4e09356de488b753c0, vars: {}, profile: , target: , version: 1.8.7
+[0m16:11:08.720713 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m16:11:08.721891 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m16:11:08.738612 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'a8176acd-c89a-4c1d-a9fb-a23154ac12cb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000216016C0980>]}
+[0m16:11:08.867266 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'a8176acd-c89a-4c1d-a9fb-a23154ac12cb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021601A0C350>]}
+[0m16:11:08.867266 [info ] [MainThread]: Found 1 model, 423 macros
+[0m16:11:08.868572 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'a8176acd-c89a-4c1d-a9fb-a23154ac12cb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021601814050>]}
+[0m16:11:08.869583 [info ] [MainThread]: 
+[0m16:11:08.870987 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m16:11:08.872077 [debug] [ThreadPool]: Acquiring new postgres connection 'list_data_warehouse'
+[0m16:11:10.364062 [debug] [ThreadPool]: Using postgres connection "list_data_warehouse"
+[0m16:11:10.365062 [debug] [ThreadPool]: On list_data_warehouse: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "my_project_profile", "target_name": "dev", "connection_name": "list_data_warehouse"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m16:11:10.365062 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:11:10.406045 [debug] [ThreadPool]: SQL status: SELECT 4 in 0.041 seconds
+[0m16:11:10.408049 [debug] [ThreadPool]: On list_data_warehouse: Close
+[0m16:11:10.409054 [debug] [ThreadPool]: Acquiring new postgres connection 'list_data_warehouse_public'
+[0m16:11:10.414608 [debug] [ThreadPool]: Using postgres connection "list_data_warehouse_public"
+[0m16:11:10.414608 [debug] [ThreadPool]: On list_data_warehouse_public: BEGIN
+[0m16:11:10.415616 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:11:10.449246 [debug] [ThreadPool]: SQL status: BEGIN in 0.034 seconds
+[0m16:11:10.449246 [debug] [ThreadPool]: Using postgres connection "list_data_warehouse_public"
+[0m16:11:10.450293 [debug] [ThreadPool]: On list_data_warehouse_public: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "my_project_profile", "target_name": "dev", "connection_name": "list_data_warehouse_public"} */
+select
+      'data_warehouse' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'public'
+    union all
+    select
+      'data_warehouse' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'public'
+    union all
+    select
+      'data_warehouse' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'public'
+  
+[0m16:11:10.457013 [debug] [ThreadPool]: SQL status: SELECT 2 in 0.007 seconds
+[0m16:11:10.458985 [debug] [ThreadPool]: On list_data_warehouse_public: ROLLBACK
+[0m16:11:10.458985 [debug] [ThreadPool]: On list_data_warehouse_public: Close
+[0m16:11:10.463623 [debug] [MainThread]: Using postgres connection "master"
+[0m16:11:10.463623 [debug] [MainThread]: On master: BEGIN
+[0m16:11:10.463623 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m16:11:10.493840 [debug] [MainThread]: SQL status: BEGIN in 0.030 seconds
+[0m16:11:10.495379 [debug] [MainThread]: Using postgres connection "master"
+[0m16:11:10.495379 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "my_project_profile", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v', 'm')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m16:11:10.516652 [debug] [MainThread]: SQL status: SELECT 0 in 0.021 seconds
+[0m16:11:10.517566 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'a8176acd-c89a-4c1d-a9fb-a23154ac12cb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021601A285F0>]}
+[0m16:11:10.518566 [debug] [MainThread]: On master: ROLLBACK
+[0m16:11:10.518566 [debug] [MainThread]: Using postgres connection "master"
+[0m16:11:10.519635 [debug] [MainThread]: On master: BEGIN
+[0m16:11:10.520571 [debug] [MainThread]: SQL status: BEGIN in 0.001 seconds
+[0m16:11:10.520571 [debug] [MainThread]: On master: COMMIT
+[0m16:11:10.520571 [debug] [MainThread]: Using postgres connection "master"
+[0m16:11:10.521673 [debug] [MainThread]: On master: COMMIT
+[0m16:11:10.522177 [debug] [MainThread]: SQL status: COMMIT in 0.000 seconds
+[0m16:11:10.522177 [debug] [MainThread]: On master: Close
+[0m16:11:10.523249 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m16:11:10.524175 [info ] [MainThread]: 
+[0m16:11:10.528588 [debug] [Thread-1 (]: Began running node model.my_project.my_model
+[0m16:11:10.528588 [info ] [Thread-1 (]: 1 of 1 START sql table model public.my_model ................................... [RUN]
+[0m16:11:10.530079 [debug] [Thread-1 (]: Acquiring new postgres connection 'model.my_project.my_model'
+[0m16:11:10.531266 [debug] [Thread-1 (]: Began compiling node model.my_project.my_model
+[0m16:11:10.537176 [debug] [Thread-1 (]: Writing injected SQL for node "model.my_project.my_model"
+[0m16:11:10.539172 [debug] [Thread-1 (]: Began executing node model.my_project.my_model
+[0m16:11:10.573308 [debug] [Thread-1 (]: Writing runtime sql for node "model.my_project.my_model"
+[0m16:11:10.577635 [debug] [Thread-1 (]: Using postgres connection "model.my_project.my_model"
+[0m16:11:10.579027 [debug] [Thread-1 (]: On model.my_project.my_model: BEGIN
+[0m16:11:10.579027 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m16:11:10.613286 [debug] [Thread-1 (]: SQL status: BEGIN in 0.034 seconds
+[0m16:11:10.613286 [debug] [Thread-1 (]: Using postgres connection "model.my_project.my_model"
+[0m16:11:10.614369 [debug] [Thread-1 (]: On model.my_project.my_model: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "my_project_profile", "target_name": "dev", "node_id": "model.my_project.my_model"} */
+
+  
+    
+
+  create  table "data_warehouse"."public"."my_model__dbt_tmp"
+  
+  
+    as
+  
+  (
+    SELECT 
+    sender_id,
+    message_id,
+    message_text,
+    channel,
+    date
+FROM scraped_data
+  );
+  
+[0m16:11:10.626232 [debug] [Thread-1 (]: SQL status: SELECT 2527 in 0.012 seconds
+[0m16:11:10.631218 [debug] [Thread-1 (]: Using postgres connection "model.my_project.my_model"
+[0m16:11:10.631218 [debug] [Thread-1 (]: On model.my_project.my_model: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "my_project_profile", "target_name": "dev", "node_id": "model.my_project.my_model"} */
+alter table "data_warehouse"."public"."my_model" rename to "my_model__dbt_backup"
+[0m16:11:10.634962 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.003 seconds
+[0m16:11:10.637581 [debug] [Thread-1 (]: Using postgres connection "model.my_project.my_model"
+[0m16:11:10.638974 [debug] [Thread-1 (]: On model.my_project.my_model: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "my_project_profile", "target_name": "dev", "node_id": "model.my_project.my_model"} */
+alter table "data_warehouse"."public"."my_model__dbt_tmp" rename to "my_model"
+[0m16:11:10.639483 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.001 seconds
+[0m16:11:10.656743 [debug] [Thread-1 (]: On model.my_project.my_model: COMMIT
+[0m16:11:10.656743 [debug] [Thread-1 (]: Using postgres connection "model.my_project.my_model"
+[0m16:11:10.657747 [debug] [Thread-1 (]: On model.my_project.my_model: COMMIT
+[0m16:11:10.665982 [debug] [Thread-1 (]: SQL status: COMMIT in 0.008 seconds
+[0m16:11:10.670906 [debug] [Thread-1 (]: Applying DROP to: "data_warehouse"."public"."my_model__dbt_backup"
+[0m16:11:10.674906 [debug] [Thread-1 (]: Using postgres connection "model.my_project.my_model"
+[0m16:11:10.674906 [debug] [Thread-1 (]: On model.my_project.my_model: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "my_project_profile", "target_name": "dev", "node_id": "model.my_project.my_model"} */
+drop table if exists "data_warehouse"."public"."my_model__dbt_backup" cascade
+[0m16:11:10.695362 [debug] [Thread-1 (]: SQL status: DROP TABLE in 0.019 seconds
+[0m16:11:10.696363 [debug] [Thread-1 (]: On model.my_project.my_model: Close
+[0m16:11:10.698364 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'a8176acd-c89a-4c1d-a9fb-a23154ac12cb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002167EF2D640>]}
+[0m16:11:10.699364 [info ] [Thread-1 (]: 1 of 1 OK created sql table model public.my_model .............................. [[32mSELECT 2527[0m in 0.17s]
+[0m16:11:10.700852 [debug] [Thread-1 (]: Finished running node model.my_project.my_model
+[0m16:11:10.701446 [debug] [MainThread]: Using postgres connection "master"
+[0m16:11:10.702603 [debug] [MainThread]: On master: BEGIN
+[0m16:11:10.702603 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m16:11:10.738336 [debug] [MainThread]: SQL status: BEGIN in 0.036 seconds
+[0m16:11:10.739379 [debug] [MainThread]: On master: COMMIT
+[0m16:11:10.739379 [debug] [MainThread]: Using postgres connection "master"
+[0m16:11:10.740387 [debug] [MainThread]: On master: COMMIT
+[0m16:11:10.740387 [debug] [MainThread]: SQL status: COMMIT in 0.000 seconds
+[0m16:11:10.741385 [debug] [MainThread]: On master: Close
+[0m16:11:10.741385 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m16:11:10.742389 [debug] [MainThread]: Connection 'list_data_warehouse' was properly closed.
+[0m16:11:10.742389 [debug] [MainThread]: Connection 'list_data_warehouse_public' was properly closed.
+[0m16:11:10.743388 [debug] [MainThread]: Connection 'model.my_project.my_model' was properly closed.
+[0m16:11:10.743388 [info ] [MainThread]: 
+[0m16:11:10.744400 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 1.87 seconds (1.87s).
+[0m16:11:10.746436 [debug] [MainThread]: Command end result
+[0m16:11:10.768161 [info ] [MainThread]: 
+[0m16:11:10.769157 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m16:11:10.770191 [info ] [MainThread]: 
+[0m16:11:10.771387 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m16:11:10.772452 [debug] [MainThread]: Command `dbt run` succeeded at 16:11:10.772452 after 2.84 seconds
+[0m16:11:10.773458 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002167E4CA1B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002167F5170B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002167F516FF0>]}
+[0m16:11:10.773458 [debug] [MainThread]: Flushing usage events
+[0m16:14:10.842626 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001ED662CAB70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001ED665DE1B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001ED663A12E0>]}
+
+
+============================== 16:14:10.849009 | d13c655a-9cfb-44d9-a6ac-26a4b6066c96 ==============================
+[0m16:14:10.849009 [info ] [MainThread]: Running with dbt=1.8.7
+[0m16:14:10.849009 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\wubeshet.abera\\.dbt', 'debug': 'False', 'version_check': 'True', 'log_path': 'C:\\Users\\wubeshet.abera\\Projects\\Ten-Academy\\Ethiopian-medical-data-warehouse\\my_project\\logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt docs serve', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m16:14:10.939867 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `target-path` config in `dbt_project.yml` has been deprecated, and will no
+longer be supported in a future version of dbt-core. If you wish to write dbt
+artifacts to a custom directory, please use the --target-path CLI flag or
+DBT_TARGET_PATH env var instead.
+[0m16:14:10.940879 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': 'd13c655a-9cfb-44d9-a6ac-26a4b6066c96', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001ED66754080>]}
+[0m16:14:11.068321 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'd13c655a-9cfb-44d9-a6ac-26a4b6066c96', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001ED66727830>]}
+[0m16:14:11.109937 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'd13c655a-9cfb-44d9-a6ac-26a4b6066c96', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001ED65E926F0>]}
+[0m16:16:45.221968 [error] [MainThread]: Encountered an error:
+
+[0m16:16:45.258518 [error] [MainThread]: Traceback (most recent call last):
+  File "C:\Users\wubeshet.abera\Projects\Ten-Academy\Ethiopian-medical-data-warehouse\venv\Lib\site-packages\dbt\cli\requires.py", line 138, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wubeshet.abera\Projects\Ten-Academy\Ethiopian-medical-data-warehouse\venv\Lib\site-packages\dbt\cli\requires.py", line 101, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wubeshet.abera\Projects\Ten-Academy\Ethiopian-medical-data-warehouse\venv\Lib\site-packages\dbt\cli\requires.py", line 218, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wubeshet.abera\Projects\Ten-Academy\Ethiopian-medical-data-warehouse\venv\Lib\site-packages\dbt\cli\requires.py", line 247, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wubeshet.abera\Projects\Ten-Academy\Ethiopian-medical-data-warehouse\venv\Lib\site-packages\dbt\cli\requires.py", line 294, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wubeshet.abera\Projects\Ten-Academy\Ethiopian-medical-data-warehouse\venv\Lib\site-packages\dbt\cli\main.py", line 303, in docs_serve
+    results = task.run()
+              ^^^^^^^^^^
+  File "C:\Users\wubeshet.abera\Projects\Ten-Academy\Ethiopian-medical-data-warehouse\venv\Lib\site-packages\dbt\task\docs\serve.py", line 29, in run
+    httpd.serve_forever()
+  File "C:\Users\wubeshet.abera\AppData\Local\Programs\Python\Python312\Lib\socketserver.py", line 235, in serve_forever
+    ready = selector.select(poll_interval)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wubeshet.abera\AppData\Local\Programs\Python\Python312\Lib\selectors.py", line 323, in select
+    r, w, _ = self._select(self._readers, self._writers, [], timeout)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wubeshet.abera\AppData\Local\Programs\Python\Python312\Lib\selectors.py", line 314, in _select
+    r, w, x = select.select(r, w, w, timeout)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+
+[0m16:16:45.268123 [debug] [MainThread]: Command `dbt docs serve` failed at 16:16:45.268123 after 154.58 seconds
+[0m16:16:45.268123 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001ED62D1E270>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001ED66A1B0B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001ED65C8C5F0>]}
+[0m16:16:45.268123 [debug] [MainThread]: Flushing usage events
+[0m16:16:52.293882 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000210C0EFB260>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000210C0C1C050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000210C345AF60>]}
+
+
+============================== 16:16:52.295459 | 6499dfac-e5fc-4ea4-b25c-7dd7b5e369ee ==============================
+[0m16:16:52.295459 [info ] [MainThread]: Running with dbt=1.8.7
+[0m16:16:52.295459 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'C:\\Users\\wubeshet.abera\\Projects\\Ten-Academy\\Ethiopian-medical-data-warehouse\\my_project\\logs', 'profiles_dir': 'C:\\Users\\wubeshet.abera\\.dbt', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt docs serve', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m16:16:52.432949 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `target-path` config in `dbt_project.yml` has been deprecated, and will no
+longer be supported in a future version of dbt-core. If you wish to write dbt
+artifacts to a custom directory, please use the --target-path CLI flag or
+DBT_TARGET_PATH env var instead.
+[0m16:16:52.436387 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '6499dfac-e5fc-4ea4-b25c-7dd7b5e369ee', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000210C38037A0>]}
+[0m16:16:52.675607 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '6499dfac-e5fc-4ea4-b25c-7dd7b5e369ee', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000210C2A3A180>]}
+[0m16:16:52.737457 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '6499dfac-e5fc-4ea4-b25c-7dd7b5e369ee', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000210C387F5F0>]}
+[0m16:17:37.298837 [error] [MainThread]: Encountered an error:
+
+[0m16:17:37.318002 [error] [MainThread]: Traceback (most recent call last):
+  File "C:\Users\wubeshet.abera\Projects\Ten-Academy\Ethiopian-medical-data-warehouse\venv\Lib\site-packages\dbt\cli\requires.py", line 138, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wubeshet.abera\Projects\Ten-Academy\Ethiopian-medical-data-warehouse\venv\Lib\site-packages\dbt\cli\requires.py", line 101, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wubeshet.abera\Projects\Ten-Academy\Ethiopian-medical-data-warehouse\venv\Lib\site-packages\dbt\cli\requires.py", line 218, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wubeshet.abera\Projects\Ten-Academy\Ethiopian-medical-data-warehouse\venv\Lib\site-packages\dbt\cli\requires.py", line 247, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wubeshet.abera\Projects\Ten-Academy\Ethiopian-medical-data-warehouse\venv\Lib\site-packages\dbt\cli\requires.py", line 294, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wubeshet.abera\Projects\Ten-Academy\Ethiopian-medical-data-warehouse\venv\Lib\site-packages\dbt\cli\main.py", line 303, in docs_serve
+    results = task.run()
+              ^^^^^^^^^^
+  File "C:\Users\wubeshet.abera\Projects\Ten-Academy\Ethiopian-medical-data-warehouse\venv\Lib\site-packages\dbt\task\docs\serve.py", line 29, in run
+    httpd.serve_forever()
+  File "C:\Users\wubeshet.abera\AppData\Local\Programs\Python\Python312\Lib\socketserver.py", line 240, in serve_forever
+    self._handle_request_noblock()
+  File "C:\Users\wubeshet.abera\AppData\Local\Programs\Python\Python312\Lib\socketserver.py", line 318, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "C:\Users\wubeshet.abera\AppData\Local\Programs\Python\Python312\Lib\socketserver.py", line 349, in process_request
+    self.finish_request(request, client_address)
+  File "C:\Users\wubeshet.abera\AppData\Local\Programs\Python\Python312\Lib\socketserver.py", line 362, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "C:\Users\wubeshet.abera\AppData\Local\Programs\Python\Python312\Lib\http\server.py", line 672, in __init__
+    super().__init__(*args, **kwargs)
+  File "C:\Users\wubeshet.abera\AppData\Local\Programs\Python\Python312\Lib\socketserver.py", line 761, in __init__
+    self.handle()
+  File "C:\Users\wubeshet.abera\AppData\Local\Programs\Python\Python312\Lib\http\server.py", line 436, in handle
+    self.handle_one_request()
+  File "C:\Users\wubeshet.abera\AppData\Local\Programs\Python\Python312\Lib\http\server.py", line 404, in handle_one_request
+    self.raw_requestline = self.rfile.readline(65537)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wubeshet.abera\AppData\Local\Programs\Python\Python312\Lib\socket.py", line 707, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+
+[0m16:17:37.327615 [debug] [MainThread]: Command `dbt docs serve` failed at 16:17:37.325815 after 45.32 seconds
+[0m16:17:37.328170 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000210C0EFB260>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000210C3940230>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000210C38ABCE0>]}
+[0m16:17:37.329206 [debug] [MainThread]: Flushing usage events
+[0m16:17:55.173120 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DE1AFFBEC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DE18922720>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DE1B7CD190>]}
+
+
+============================== 16:17:55.176826 | fca20e72-5a6a-43b0-a42c-7ab7eead0968 ==============================
+[0m16:17:55.176826 [info ] [MainThread]: Running with dbt=1.8.7
+[0m16:17:55.177724 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\wubeshet.abera\\.dbt', 'version_check': 'True', 'debug': 'False', 'log_path': 'C:\\Users\\wubeshet.abera\\Projects\\Ten-Academy\\Ethiopian-medical-data-warehouse\\my_project\\logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'invocation_command': 'dbt docs generate', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m16:17:55.279375 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `target-path` config in `dbt_project.yml` has been deprecated, and will no
+longer be supported in a future version of dbt-core. If you wish to write dbt
+artifacts to a custom directory, please use the --target-path CLI flag or
+DBT_TARGET_PATH env var instead.
+[0m16:17:55.281794 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': 'fca20e72-5a6a-43b0-a42c-7ab7eead0968', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DE1B934080>]}
+[0m16:17:55.524881 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'fca20e72-5a6a-43b0-a42c-7ab7eead0968', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DE1B9D1550>]}
+[0m16:17:55.624026 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'fca20e72-5a6a-43b0-a42c-7ab7eead0968', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DE1B8D7C20>]}
+[0m16:17:55.627014 [info ] [MainThread]: Registered adapter: postgres=1.8.2
+[0m16:17:55.653728 [debug] [MainThread]: checksum: 4af21dafb485259c48497ac86b711ddb1982f3d0f1c0ca4e09356de488b753c0, vars: {}, profile: , target: , version: 1.8.7
+[0m16:17:55.786772 [info ] [MainThread]: Unable to do partial parsing because a project config has changed
+[0m16:17:55.789101 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'fca20e72-5a6a-43b0-a42c-7ab7eead0968', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DE1CC263F0>]}
+[0m16:17:56.637486 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'fca20e72-5a6a-43b0-a42c-7ab7eead0968', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DE1CDB6B70>]}
+[0m16:17:56.660627 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'fca20e72-5a6a-43b0-a42c-7ab7eead0968', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DE1CDB6660>]}
+[0m16:17:56.660627 [info ] [MainThread]: Found 1 model, 423 macros
+[0m16:17:56.662022 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'fca20e72-5a6a-43b0-a42c-7ab7eead0968', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DE1CC81D90>]}
+[0m16:17:56.663026 [info ] [MainThread]: 
+[0m16:17:56.663991 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m16:17:56.665444 [debug] [ThreadPool]: Acquiring new postgres connection 'list_data_warehouse_public'
+[0m16:17:56.731233 [debug] [ThreadPool]: Using postgres connection "list_data_warehouse_public"
+[0m16:17:56.731233 [debug] [ThreadPool]: On list_data_warehouse_public: BEGIN
+[0m16:17:56.732234 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:17:56.801353 [debug] [ThreadPool]: SQL status: BEGIN in 0.069 seconds
+[0m16:17:56.803049 [debug] [ThreadPool]: Using postgres connection "list_data_warehouse_public"
+[0m16:17:56.803568 [debug] [ThreadPool]: On list_data_warehouse_public: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "my_project_profile", "target_name": "dev", "connection_name": "list_data_warehouse_public"} */
+select
+      'data_warehouse' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'public'
+    union all
+    select
+      'data_warehouse' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'public'
+    union all
+    select
+      'data_warehouse' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'public'
+  
+[0m16:17:56.815314 [debug] [ThreadPool]: SQL status: SELECT 2 in 0.010 seconds
+[0m16:17:56.818334 [debug] [ThreadPool]: On list_data_warehouse_public: ROLLBACK
+[0m16:17:56.820331 [debug] [ThreadPool]: On list_data_warehouse_public: Close
+[0m16:17:56.832948 [debug] [MainThread]: Using postgres connection "master"
+[0m16:17:56.833948 [debug] [MainThread]: On master: BEGIN
+[0m16:17:56.834949 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m16:17:57.035626 [debug] [MainThread]: SQL status: BEGIN in 0.200 seconds
+[0m16:17:57.036603 [debug] [MainThread]: Using postgres connection "master"
+[0m16:17:57.038598 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "my_project_profile", "target_name": "dev", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v', 'm')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m16:17:57.053952 [debug] [MainThread]: SQL status: SELECT 0 in 0.014 seconds
+[0m16:17:57.056968 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'fca20e72-5a6a-43b0-a42c-7ab7eead0968', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DE1CD0BBF0>]}
+[0m16:17:57.058972 [debug] [MainThread]: On master: ROLLBACK
+[0m16:17:57.060704 [debug] [MainThread]: On master: Close
+[0m16:17:57.062576 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m16:17:57.064797 [info ] [MainThread]: 
+[0m16:17:57.075859 [debug] [Thread-1 (]: Began running node model.my_project.my_model
+[0m16:17:57.077498 [debug] [Thread-1 (]: Acquiring new postgres connection 'model.my_project.my_model'
+[0m16:17:57.079613 [debug] [Thread-1 (]: Began compiling node model.my_project.my_model
+[0m16:17:57.098598 [debug] [Thread-1 (]: Writing injected SQL for node "model.my_project.my_model"
+[0m16:17:57.102083 [debug] [Thread-1 (]: Began executing node model.my_project.my_model
+[0m16:17:57.104167 [debug] [Thread-1 (]: Finished running node model.my_project.my_model
+[0m16:17:57.107511 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m16:17:57.108913 [debug] [MainThread]: Connection 'list_data_warehouse_public' was properly closed.
+[0m16:17:57.109959 [debug] [MainThread]: Connection 'model.my_project.my_model' was properly closed.
+[0m16:17:57.113011 [debug] [MainThread]: Command end result
+[0m16:17:57.261836 [debug] [MainThread]: Acquiring new postgres connection 'generate_catalog'
+[0m16:17:57.261836 [info ] [MainThread]: Building catalog
+[0m16:17:57.279074 [debug] [ThreadPool]: Acquiring new postgres connection 'data_warehouse.information_schema'
+[0m16:17:57.299002 [debug] [ThreadPool]: Using postgres connection "data_warehouse.information_schema"
+[0m16:17:57.301006 [debug] [ThreadPool]: On data_warehouse.information_schema: BEGIN
+[0m16:17:57.303002 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:17:57.392206 [debug] [ThreadPool]: SQL status: BEGIN in 0.089 seconds
+[0m16:17:57.393297 [debug] [ThreadPool]: Using postgres connection "data_warehouse.information_schema"
+[0m16:17:57.395315 [debug] [ThreadPool]: On data_warehouse.information_schema: /* {"app": "dbt", "dbt_version": "1.8.7", "profile_name": "my_project_profile", "target_name": "dev", "connection_name": "data_warehouse.information_schema"} */
+
+    
+    
+
+    select
+        'data_warehouse' as table_database,
+        sch.nspname as table_schema,
+        tbl.relname as table_name,
+        case tbl.relkind
+            when 'v' then 'VIEW'
+            when 'm' then 'MATERIALIZED VIEW'
+            else 'BASE TABLE'
+        end as table_type,
+        tbl_desc.description as table_comment,
+        col.attname as column_name,
+        col.attnum as column_index,
+        pg_catalog.format_type(col.atttypid, col.atttypmod) as column_type,
+        col_desc.description as column_comment,
+        pg_get_userbyid(tbl.relowner) as table_owner
+
+    from pg_catalog.pg_namespace sch
+    join pg_catalog.pg_class tbl on tbl.relnamespace = sch.oid
+    join pg_catalog.pg_attribute col on col.attrelid = tbl.oid
+    left outer join pg_catalog.pg_description tbl_desc on (tbl_desc.objoid = tbl.oid and tbl_desc.objsubid = 0)
+    left outer join pg_catalog.pg_description col_desc on (col_desc.objoid = tbl.oid and col_desc.objsubid = col.attnum)
+    where ((upper(sch.nspname) = upper('public') and
+           upper(tbl.relname) = upper('my_model')))
+      and not pg_is_other_temp_schema(sch.oid) -- not a temporary schema belonging to another session
+      and tbl.relpersistence in ('p', 'u') -- [p]ermanent table or [u]nlogged table. Exclude [t]emporary tables
+      and tbl.relkind in ('r', 'v', 'f', 'p', 'm') -- o[r]dinary table, [v]iew, [f]oreign table, [p]artitioned table, [m]aterialized view. Other values are [i]ndex, [S]equence, [c]omposite type, [t]OAST table
+      and col.attnum > 0 -- negative numbers are used for system columns such as oid
+      and not col.attisdropped -- column as not been dropped
+
+    order by
+        sch.nspname,
+        tbl.relname,
+        col.attnum
+[0m16:17:57.412208 [debug] [ThreadPool]: SQL status: SELECT 5 in 0.016 seconds
+[0m16:17:57.423822 [debug] [ThreadPool]: On data_warehouse.information_schema: ROLLBACK
+[0m16:17:57.425784 [debug] [ThreadPool]: On data_warehouse.information_schema: Close
+[0m16:17:57.496046 [info ] [MainThread]: Catalog written to C:\Users\wubeshet.abera\Projects\Ten-Academy\Ethiopian-medical-data-warehouse\my_project\target\catalog.json
+[0m16:17:57.501264 [debug] [MainThread]: Command `dbt docs generate` succeeded at 16:17:57.500168 after 2.49 seconds
+[0m16:17:57.502276 [debug] [MainThread]: Connection 'generate_catalog' was properly closed.
+[0m16:17:57.503227 [debug] [MainThread]: Connection 'data_warehouse.information_schema' was properly closed.
+[0m16:17:57.504969 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DE1B4ADEE0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DE1B3F2330>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001DE1CC53FE0>]}
+[0m16:17:57.506067 [debug] [MainThread]: Flushing usage events
+[0m16:18:04.650275 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018B72878170>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018B74F8DD00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018B74F8DD90>]}
+
+
+============================== 16:18:04.654405 | de7a1840-52a9-4edd-b7d4-c3f2898abbb3 ==============================
+[0m16:18:04.654405 [info ] [MainThread]: Running with dbt=1.8.7
+[0m16:18:04.655404 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'C:\\Users\\wubeshet.abera\\Projects\\Ten-Academy\\Ethiopian-medical-data-warehouse\\my_project\\logs', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\wubeshet.abera\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'invocation_command': 'dbt docs serve', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m16:18:04.756385 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `target-path` config in `dbt_project.yml` has been deprecated, and will no
+longer be supported in a future version of dbt-core. If you wish to write dbt
+artifacts to a custom directory, please use the --target-path CLI flag or
+DBT_TARGET_PATH env var instead.
+[0m16:18:04.758368 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': 'de7a1840-52a9-4edd-b7d4-c3f2898abbb3', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018B75462930>]}
+[0m16:18:04.870180 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'de7a1840-52a9-4edd-b7d4-c3f2898abbb3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018B75463530>]}
+[0m16:18:04.943533 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'de7a1840-52a9-4edd-b7d4-c3f2898abbb3', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018B75367F80>]}
