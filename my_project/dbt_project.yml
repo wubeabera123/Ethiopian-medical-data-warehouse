@@ -1,0 +1,8 @@
+name: 'my_project'
+version: '1.0'
+profile: 'my_project_profile'  # The profile you will define in the next step
+
+target-path: "target/"
+models:
+  my_project:
+    materialized: table  # You can also use 'view' or 'incremental'
