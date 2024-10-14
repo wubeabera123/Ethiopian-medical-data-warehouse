@@ -3,8 +3,8 @@ from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 
-# Correct connection string with URL-encoded password
-DATABASE_URL = "postgresql://postgres:Mati%401993@localhost/data_warehouse"
+# Database URL configuration
+DATABASE_URL = "postgresql://postgres:12345@localhost/data_warehouse"
 
 engine = create_engine(DATABASE_URL)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
